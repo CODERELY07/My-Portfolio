@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav style="position: fixed;top: 0;width: 100%;" class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="text-white">C</span><span class="text-primary">ODERELY</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-light" href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#"><i class="fas fa-lightbulb"></i> Skill</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#"><i class="fas fa-folder"></i> Project</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#"><i class="fas fa-file-alt"></i> Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="btn btn-outline-light ms-3"><i class="fas fa-sun"></i></button>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <section id="home" class="row ">
+            <div class="col-md-12 col-lg-8 text-center text-md-start">
+
+              
+                <div class="row align-items-center">
+                    <h2>My Profile</h2>
+                    <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                        <img src="assets/images/profile.jpg" alt="Profile picture" class="rounded-circle img-fluid">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <h1 class="fw-bold">Mark Ely Calipjo</h1>
+                        <p>Developer</p>
+                        <div class="d-flex justify-content-center gap-3 mt-3">
+                            <a href="#" class="fs-3 social-icon text-light"><i class="fab fa-github"></i></a>
+                            <a href="#" class="fs-3 social-icon text-light"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="fs-3 social-icon text-light"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        
+                        <div class="details mt-4 row">
+                            <div class="col-12 col-md-4">
+                                <p>Born in:</p>
+                                <p class="fw-bold">Nabua, Camarines Sur</p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p>Current Address:</p>
+                                <p class="fw-bold">Nabua, Philippines</p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <p>Date Born:</p>
+                                <p class="fw-bold">September 26, 2004</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="developer-card">
+                    <p>“I am a passionate <span class="text-primary">Web Developer</span> and can also work in <span class="text-danger">Web Design</span>.”</p>
+                    <div class="d-flex flex-column flex-md-row justify-content-center gap-3 mt-4">
+                        <button class="btn btn-primary btn-custom">
+                            <img src="https://storage.googleapis.com/a1aa/image/_T2_MN-qH262i1wfTYZLoFzfnWUB9NvNAgwmy9T9vjw.jpg" alt="Document Icon" class="img-fluid" style="width: 30px; height: 30px;">
+                            Download My CV
+                        </button>
+                        <button class="btn btn-outline-danger">Contact Me</button>
+                    </div>
+                </div>            
+            </div>
+        </section>
+        <section id="about" class="about-section">
+            <div class="text-start">
+                <h2>ABOUT ME</h2>
+                <p>Discover more about me, my work, and the skills I bring to the table.</p> <p>Feel free to explore my background, experiences, and the projects I've been involved in.</p>
+                <div class="row mt-5">
+                    <!-- Left Side: About Content -->
+                    <div class="col-md-12 about-content">
+                        <h4><strong>Let's Connect and Get to Know Each Other!</strong></h4>
+                    <p>I'm a <strong>Web Developer</strong> passionate about building and managing websites. Skilled in both frontend and backend development, I love creating seamless and dynamic digital experiences. You can check out some of my work in the <strong>Projects</strong> section.</p>
+                    <p>Beyond coding, I thrive on problem-solving and innovation, always looking for ways to improve and optimize. I enjoy collaborating with like-minded individuals, sharing knowledge, and staying updated with the latest tech trends. With a growth mindset and a passion for technology, I'm ready to take on new challenges and make an impact in the digital world.</p>
+                    <p>I'm open to exciting <strong>job</strong> opportunities where I can contribute, learn, and grow. If you have a great opportunity, feel free to <strong>contact</strong> me—let’s create something amazing together!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
