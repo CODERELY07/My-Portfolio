@@ -87,4 +87,12 @@ section h2::after {
     .details{
         display: none;
     }
+    section{
+        scroll-snap-align: start;
+        height: max-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
