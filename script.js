@@ -60,27 +60,27 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    if (window.innerWidth > 768) { // Only run script if screen width is greater than 768px
-        let isScrolling = false;
-        let currentIndex = 0;
-        const sections = document.querySelectorAll("section");
+    // if (window.innerWidth > 768) { // Only run script if screen width is greater than 768px
+    //     let isScrolling = false;
+    //     let currentIndex = 0;
+    //     const sections = document.querySelectorAll("section");
     
-        window.addEventListener("wheel", (event) => {
-            if (isScrolling) return;
-            isScrolling = true;
+    //     window.addEventListener("wheel", (event) => {
+    //         if (isScrolling) return;
+    //         isScrolling = true;
     
-            if (event.deltaY > 3) {
-                currentIndex = Math.min(currentIndex + 1, sections.length - 1);
-            } else if (event.deltaY < -3) {
-                currentIndex = Math.max(currentIndex - 1, 0);
-            }
+    //         if (event.deltaY > 3) {
+    //             currentIndex = Math.min(currentIndex + 1, sections.length - 1);
+    //         } else if (event.deltaY < -3) {
+    //             currentIndex = Math.max(currentIndex - 1, 0);
+    //         }
     
-            sections[currentIndex].scrollIntoView({ behavior: "smooth" });
+    //         sections[currentIndex].scrollIntoView({ behavior: "smooth" });
     
-            setTimeout(() => {
-                isScrolling = false;
-            }, 500);
-        }, { passive: false });
-    }
+    //         setTimeout(() => {
+    //             isScrolling = false;
+    //         }, 500);
+    //     }, { passive: false });
+    // }
     
 });

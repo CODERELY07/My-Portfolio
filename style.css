@@ -30,7 +30,7 @@ html, body {
 
 .main-container {
     scroll-snap-type: none;
-    height: 100vh;
+    padding: 20% 0% 10%;
     width: 100%;
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -41,7 +41,7 @@ html, body {
 }   
 section{
     scroll-snap-align: start;
-    height: 100vh;
+    padding: 20% 0% 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,6 +83,25 @@ section h2::after {
     justify-content: center;
     gap: 8px;
 }
+/* Skills */
+.card-img-top{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 80px;
+}
+/* Contact */
+.contact-container {
+    width: 100% !important;
+    flex-direction: column;
+}
+.contact-container form{
+    width: 100%;
+}
+.contact-container .form-control{
+    width: 100% !important;
+    padding: 10px;
+}
+
 @media only screen and (max-width: 768px) {
     section{
         height: max-content;
